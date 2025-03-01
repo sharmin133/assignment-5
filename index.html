@@ -29,8 +29,12 @@
 </div>
 
 <div class="flex  p-6 gap-12" >
-    <div><img src="./assets/checkbox.png" alt=""></div>
-    <div><img src="./assets/theme-btn.png" alt=""></div>
+   <div class="flex gap-3">
+    <div class="flex gap-3"><img src="./assets/checkbox.png" alt="">
+     <p id="total-increase" class="text-3xl font-semibold ">23</p>
+   </div>
+</div>
+    <div><img  onclick="changeBackgroundColor()" src="./assets/theme-btn.png" alt=""></div>
     
 
 </div>
@@ -50,7 +54,9 @@
         <div class="bg-indigo-50 p-3 mt-12 rounded-xl  ">
         <div class="flex gap-3">
             <div class="rounded-full p-4 bg-white"><img src="./assets/checkbox.png" alt=""></div>
-            <div><h2>Task Assigned</h2></div>
+            <div><h2>Task Assigned</h2>
+            <p  id="total-decrease" class="text-4xl font-semibold text-center "> 6</p>
+        </div>
         </div>
         </div>
         
@@ -81,7 +87,7 @@
                <div class="flex justify-between mt-4">
                 <div><h2>Deadline</h2>
                 <p>21 March 2025</p></div>
-                <div><button class="border-solid bg-blue-800 text-white px-4 py-4 rounded-lg ">Completed</button></div>
+                <div><button id="btn-one"  class="border-solid bg-blue-800 text-white px-4 py-4 rounded-lg ">Completed</button></div>
                </div>
             </div>
         
@@ -171,9 +177,10 @@
 
 </section>
 
-
-
-
    </main>
+
+
+
+   <script src="./js/board.js"></script>
 </body>
 </html>
