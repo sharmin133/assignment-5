@@ -35,9 +35,9 @@
             <div><img src="./assets/logo.png" alt=""></div>
             <div class="text-4xl">  <h1>Dev<span class="font-bold ">Board</span></h1></div>
         </div>
-        
+        <a href="./index.html">
         <div><button class="border-solid bg-blue-800 text-white px-4 py-4 rounded-lg ">Back to Desk</button></div>
-        
+    </a>
         </nav>
 
     </header>
@@ -47,7 +47,7 @@
      <div class="mx-28 bg-white p-4 rounded-xl mb-5">
         <h2>Question-1: What are the different ways to select an element in the DOM?</h2>
         <hr>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque incidunt rem non dolorum architecto omnis blanditiis, eum ipsam distinctio facere sequi beatae neque debitis exercitationem earum corporis. Pariatur, nulla!
+getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll()
      </div>
 
 
@@ -55,7 +55,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque 
      <div class="mx-28 bg-white p-4 rounded-xl mb-5">
         <h2>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
         <hr>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque incidunt rem non dolorum architecto omnis blanditiis, eum ipsam distinctio facere sequi beatae neque debitis exercitationem earum corporis. Pariatur, nulla!
+        innerHTML is get or sets the HTML content inside an element, including tags.innerText is gets or sets the visible text inside an element,ignoring hidden elements and extra spaces. textContent gets pr sets all text inside an element, including hidden elements,but without parsing HTML.
+       
      </div>
 
 
@@ -64,7 +65,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque 
      <div class="mx-28 bg-white p-4 rounded-xl mb-5">
         <h2>Question-3: What is event delegation in the DOM?</h2>
         <hr>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque incidunt rem non dolorum architecto omnis blanditiis, eum ipsam distinctio facere sequi beatae neque debitis exercitationem earum corporis. Pariatur, nulla!
+        Event delegation is a technique in the DOM where a single parent elemnet handles events for multiple child elements even if they added dynamically.
+        
      </div>
 
 
@@ -73,7 +75,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque 
      <div class="mx-28 bg-white p-4 rounded-xl mb-5">
         <h2>Question-4: What is event bubbling in the DOM?</h2>
         <hr>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque incidunt rem non dolorum architecto omnis blanditiis, eum ipsam distinctio facere sequi beatae neque debitis exercitationem earum corporis. Pariatur, nulla!
+        Event bubbling is a mechanism in the DOM where an event starts from the target element and propagates upward through its parent elements until it reaches the document root.
+       
      </div>
 
 
@@ -81,8 +84,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque 
      <div class="mx-28 bg-white p-4 rounded-xl mb-5">
         <h2>Question-5: How do you create, add, and remove elements using JavaScript?</h2>
         <hr>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque incidunt rem non dolorum architecto omnis blanditiis, eum ipsam distinctio facere sequi beatae neque debitis exercitationem earum corporis. Pariatur, nulla!
-     </div>
+document.createElement('div'),  document.body.appendChlid(newDiv),  newDiv.remove()
 
     </main>
 
