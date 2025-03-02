@@ -34,12 +34,15 @@ border-bottom: 1px dashed gray;
 
 </style>
 </head>
-<body class="poppins-font bg-indigo-50">
+<body class="poppins-font bg-indigo-50 pb-8">
 
 
-   <header >
+   <header class="pt-8">
 
-    <nav class="flex justify-between p-6 bg-white mx-28 mb-6  rounded-2xl" >
+
+
+
+    <nav class="flex justify-between p-6 bg-white mx-28 my-6  rounded-2xl" >
 <div class="flex  p-6 gap-4" >
     <div><img src="./assets/logo.png" alt=""></div>
     <div class="text-4xl">  <h1>Dev<span class="font-bold ">Board</span></h1></div>
@@ -205,9 +208,11 @@ border-bottom: 1px dashed gray;
 
 
     <div class="bg-white drop-shadow-md pl-12 pt-12 pr-8 pb-8  rounded-3xl  ml-3 mr-28" >
-        <h2 >Activity Log</h2>
-        
-        <button class="btn btn-primary" onclick="clearHistory()">Clear History</button>
+        <div class="flex gap-2 mb-4">
+        <div> <img src="./assets/activity.png" alt=""></div>
+            <h2> Activity Log</h2>
+        </div>
+        <button class="btn btn-primary mb-4" onclick="clearHistory()">Clear History</button>
         
         <div id="activity-log" class="space-y-3 gap-3"></div>
         </div>
