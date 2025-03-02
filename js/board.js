@@ -23,7 +23,13 @@ let allTotal=6;
     const taskContainer = event.target.parentElement.parentElement.parentElement;
     const taskTitle = taskContainer.querySelector('h1').textContent;
     const time = new Date().toLocaleTimeString();
-    document.getElementById("activity-log").innerHTML += `<p> You have completed the task ${taskTitle} at ${time}</p>`;
+    const newMessage=document.createElement('p');
+    newMessage.textContent=` You have completed the task ${taskTitle} at ${time}`;
+    
+    newMessage.style.backgroundColor="#BFDBFE";
+    newMessage.style.marginTop='10px';
+    newMessage.style.borderRadius='10px';
+    document.getElementById('activity-log').appendChild(newMessage);
 
 
     event.target.disabled=true;
