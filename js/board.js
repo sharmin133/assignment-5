@@ -21,8 +21,6 @@ let allTotal=6;
     document.getElementById('total-decrease').textContent= allTotal;
 
     const taskContainer = event.target.parentElement.parentElement.parentElement;
-
-    // Find the task title (h1) from the parent container
     const taskTitle = taskContainer.querySelector('h1').textContent;
     const time = new Date().toLocaleTimeString();
     document.getElementById("activity-log").innerHTML += `<p> You have completed the task ${taskTitle} at ${time}</p>`;
@@ -55,7 +53,7 @@ function changeBackgroundColor(){
 function updateDate(){
 const now= new Date();
 const formatWeekDay={weekday:'short'};
-const formatMonth={month:'long'};
+const formatMonth={month:'short'};
 const formatDay={day: '2-digit'};
 const formatYear={year: 'numeric'};
 
